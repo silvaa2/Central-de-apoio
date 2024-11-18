@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.foto-redonda {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    text-align: justify; /* Centraliza o texto */
+}
+
+.agendar {
+    
+        
+        margin: 10px auto; /* Centraliza o botão e adiciona margem superior/inferior */
+        padding: 10px 20px; /* Ajusta o preenchimento do botão */
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+        cursor: pointer; /* Altera o cursor ao passar o mouse */
+    
+}
+
+h2 {
+    color: black; /* Cor do texto */
+    font-size: 28px; /* Tamanho da fonte */
+    padding: 20px; /* Espaço interno */
+    text-align: center; /* Centraliza o texto */
+    margin: 2; /* Remove margens padrão */
+}
+
+.container2{
+    /*display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 20vh; /* Altura da janela */
+    background-color: white; /* Cor de fundo para destaque */
+    color: black; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: justify; /* Centraliza o texto */
+}
+
+
+.tira {
+    width: 100%; /* Largura total da página */
+            height: 50px; /* Altura da tira */
+            background-color: #f4f4f4; /* Cor da tira */
+            display: flex; /* Usando flexbox */
+            align-items: center; /* Alinhamento vertical */
+            justify-content: center; /* Alinhamento horizontal */
+            color: white; /* Cor do texto */
+            font-size: 18px; /* Tamanho da fonte */
+        
+}
+
+
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço disponível */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+header {
+    background: #79b0eb;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #79b0eb;
+    text-decoration: none;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #79b0eb;
+    color: white;    
+    bottom: 200;
+    width: 100%;
+}
+.container {
+    max-width: 1272px;
+}
+/* Estilos existentes... */
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #79b0eb;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.article img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.article h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.article p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+.elevate-me {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(0); /* Posição inicial */
+}
+
+.elevate-me:hover {
+    transform: translateY(-10px); /* Eleva a div ao passar o mouse sobre ela */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+a {
+
+    text-decoration: none;
+    color: rgb(56, 122, 235);
+}
